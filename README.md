@@ -6,7 +6,7 @@ Made with my mentor at [Bloc](http://bloc.io).
 
 ======
 
-* Ruby version
+* Ruby version - ruby 2.2.4p230
 
 * System dependencies
 
@@ -16,7 +16,7 @@ Made with my mentor at [Bloc](http://bloc.io).
 
 * Database initialization
 
-* How to run the test suite
+* How to run the test suite - RSpec
 
 * Services (job queues, cache servers, search engines, etc.)
 
