@@ -26,6 +26,7 @@ class PostsController < ApplicationController
 
 	def edit
 		@post = Post.find(params[:id])
+		@topic = Topic.find(params[:topic_id])
 	end
 
 	def update
