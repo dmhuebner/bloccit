@@ -6,7 +6,15 @@ RSpec.describe Topic, type: :model do
 	let(:public) {true}
 	let(:topic) {Topic.create!(name: name, description: description)}
 
+	# Relational tests
 	it {is_expected.to have_many(:posts)}
+
+	# Validate tests
+	it {is_expected.to validate_presence_of(:name)}
+	it {is_expected.to validate_presence_of(:description)}
+
+	it {is_expected.to validate_length_of(:name)}
+	it {is_expected.to validate_length_of(:description)}
 
 	describe "attributes" do
 		it "has name, description, and public attributes" do
