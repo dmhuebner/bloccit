@@ -2,7 +2,7 @@
 	<div class="col-md-8">
 		<div clas="media">
 			<br />
-			<% avatar_url = @user.avatar_url(128) %>
+			<% avatar_url = avatar_url(@user, 128) %>
 			<% if avatar_url %>
 				<div class="media-left">
 					<%= image_tag avatar_url, class: 'media-object' %>
@@ -19,8 +19,48 @@
 	</div>
 </div>
 
-<h2>Posts</h2>
+<h2>
+	<% if has_posts? %>
+		Posts
+	<% else %>
+		<%= "#{@user.name} has not submitted any posts yet." %>
+	<% end %>
+</h2>
 <%= render @user.posts %>
 
-<h2>Comments</h2>
+<h2>
+	<% if has_comments? %>
+		Comments
+	<% else %>
+		<%= "#{@user.name} has not submitted any comments yet." %>
+	<% end %>
+</h2>
 <%= render @user.comments %>
+
+
+<% if has_favorites? %>
+<h2>Favorited Posts</h2>
+<% @user.favorites.each do |favorite| %>
+	<div class="media">
+		<% avatar_url = avatar_url(favorite.user, 32) %>
+		<% if avatar_url %>
+			<div class="media-left">
+				<%= image_tag avatar_url, class: 'media-object' %>
+				<small>
+					Posts: <%= favorite.user.posts.count %><br />
+					Comments: <%= favorite.user.comments.count %>
+				</small>
+			</div>
+		<% end %>
+		<div class="media-body">
+			<%= render partial: 'votes/voter', locals: {post: favorite.post} %>
+			<h4 class="media-heading">
+				<%= link_to favorite.post.title, topic_post_path(favorite.post.topic, favorite.post) %>
+			</h4>
+			<small> submitted <%= time_ago_in_words(favorite.post.created_at) %> ago by <%= favorite.post.user.name %> <br />
+				<%= favorite.post.comments.count %> comments
+			</small>
+		</div>
+	</div>
+<% end %>
+<% end %>
