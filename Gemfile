@@ -36,3 +36,5 @@ gem 'bootstrap-sass'
 gem 'bcrypt'
 # Figaro - Handles sensitive data with environment variables\
 gem 'figaro', '1.0'
+
+gem 'rb-readline'
