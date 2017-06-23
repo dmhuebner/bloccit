@@ -16,8 +16,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/***** General Styles *****/
+
 .user-info {
-	margin-top: 9px;
+	// margin-top: 5px;
 }
 
 .nav {
@@ -28,4 +30,65 @@
 	margin-right: 1rem;
 	margin-bottom: 1rem;
 	max-width: 4rem;
+}
+
+body {
+	color: #4F5D75;
+}
+
+.welcome-jumbo {
+	background-color: #2D3142;
+	color: #FFF;
+	text-align: center;
+	box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.7);
+}
+
+.btn-primary {
+	background-color: #EF8354;
+	border: 1px solid #bb5d34;
+}
+
+.btn-primary:hover {
+	background-color: #a24a24;
+}
+
+a {
+	color: #EF8354;
+}
+
+a:hover,
+a:active {
+	color: #a24a24;
+}
+
+.welcome-sub-cols {
+	background-color: #eff1f5;
+	border-radius: 5px;
+	box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.4);
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+}
+
+.about-section {
+	background-color: #eff1f5;
+	padding: 4rem;
+}
+
+.nav-tabs li a:hover {
+	border: 1px solid #EF8354;
+	background-color: #a24a24;
+	color: #FFF;
+}
+
+.footer {
+	background-color: #2D3142;
+	color: #FFF;
+	min-height: 5rem;
+	text-align: center;
+	padding: 2rem;
+}
+
+/***** Sticky Footer Styles *****/
+#wrapper {
+	min-height: 90vh;
 }
