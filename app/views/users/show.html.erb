@@ -18,7 +18,7 @@
 		</div>
 	</div>
 </div>
-
+<hr />
 <h2>
 	<% if has_posts? %>
 		Posts
@@ -28,6 +28,7 @@
 </h2>
 <%= render @user.posts %>
 
+<hr />
 <h2>
 	<% if has_comments? %>
 		Comments
@@ -37,7 +38,7 @@
 </h2>
 <%= render @user.comments %>
 
-
+<hr />
 <% if has_favorites? %>
 <h2>Favorited Posts</h2>
 <% @user.favorites.each do |favorite| %>

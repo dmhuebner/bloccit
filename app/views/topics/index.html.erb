@@ -1,7 +1,13 @@
-<h1>Topics</h1>
+<div class="row welcome-jumbo jumbotron">
+	<h1 class="text-center">Topics</h1>
+</div>
 
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-10 col-md-offset-1 welcome-sub-cols">
+		<hr />
+		<% if user_is_authorized_for_topics? %>
+			<%= link_to "New Topic", new_topic_path, class: "btn btn-primary pull-right" %>
+		<% end %>
 		<% @topics.each do |topic| %>
 			<div class="media">
 				<div class="media-body">
@@ -16,9 +22,9 @@
 		<% end %>
 	</div>
 
-	<% if user_is_authorized_for_topics? %>
-		<div class="col-md-4">
-			<%= link_to "New Topic", new_topic_path, class: "btn btn-success" %>
+	<!-- <% if user_is_authorized_for_topics? %>
+		<div class="col-md-1">
+			<%= link_to "New Topic", new_topic_path, class: "btn btn-primary" %>
 		</div>
-	<% end %>
+	<% end %> -->
 </div>
