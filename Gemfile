@@ -36,5 +36,7 @@ gem 'bootstrap-sass'
 gem 'bcrypt'
 # Figaro - Handles sensitive data with environment variables\
 gem 'figaro', '1.0'
+# Redcarpet parses markdown
+gem 'redcarpet'
 
 gem 'rb-readline'

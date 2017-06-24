@@ -17,7 +17,9 @@
 				<%= link_to "New Post", new_topic_post_path(@topic), class: "btn btn-primary btn-lg" %>
 			</div>
 		<% end %>
-		<p class="lead"><%= @topic.description %></p>
+		<h4 class="lead"><%= markdown @topic.description %></h4>
+		<hr />
+		<h4>Posts:</h4>
 		<% @topic.posts.each do |post| %>
 			<div class="media">
 				<%= render partial: 'votes/voter', locals: {post: post} %>
