@@ -3,7 +3,7 @@
 
 Bloccit is a Reddit-like application designed to let users share and explore posts and links from across the internet. Users can comment on public posts, use Markdown to style their own posts and up-vote or down-vote any posts they come across. Bloccit was built with Ruby on Rails.
 
-### TECHNOLOGIES USED
+#### TECHNOLOGIES USED
 
 **Ruby, Ruby on Rails, HTML5, CSS3, JavaScript, Git**
 
@@ -13,7 +13,7 @@ View the project http://github.com/dmhuebner/bloccit
 
 -----------------------------------------------------------------
 
-### EXPLANATION
+#### EXPLANATION
 
 The goal of this project was to build an application modeled after Reddit to practice building CRUD applications with Ruby on Rails. It was created according to user stories provided in the Bloc Full Stack Developer curriculum.
 
@@ -23,7 +23,7 @@ Bloccit has a simple, modern, mobile responsive design optimized for users on an
 
 -----------------------------------------------------------------
 
-## Setup and Configuration
+### Setup and Configuration
 **Ruby v. 2.2.4**
 **Rails v. 4.2.5**
 **Databases:** SQLite (Test, Development), PostgreSQL (Production)
