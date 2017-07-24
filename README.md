@@ -7,7 +7,7 @@ Bloccit is a Reddit-like application designed to let users share and explore pos
 
 **Ruby, Ruby on Rails, HTML5, CSS3, JavaScript, Git**
 
-View the app: https://cookit-grandmasrecipes.herokuapp.com/
+View the app: http://cryptic-lake-52666.herokuapp.com/
 
 View the project http://github.com/dmhuebner/bloccit
 
