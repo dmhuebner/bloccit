@@ -1,15 +1,15 @@
-## Bloccit 
+## Post Maestro
 ### SUMMARY
 
-Bloccit is a Reddit-like application designed to let users share and explore posts and links from across the internet. Users can comment on public posts, use Markdown to style their own posts and up-vote or down-vote any posts they come across. Bloccit was built with Ruby on Rails.
+Post Maestro is a Reddit-like application designed to let users share and explore posts and links from across the internet. Users can comment on public posts, use Markdown to style their own posts and up-vote or down-vote any posts they come across. Post Maestro was built with Ruby on Rails.
 
 #### TECHNOLOGIES USED
 
 **Ruby, Ruby on Rails, HTML5, CSS3, JavaScript, Git**
 
-View the app: http://cryptic-lake-52666.herokuapp.com/
+View the app: http://postmaestro.herokuapp.com/
 
-View the project http://github.com/dmhuebner/bloccit
+View the project http://github.com/dmhuebner/post-maestro
 
 -----------------------------------------------------------------
 
@@ -17,9 +17,9 @@ View the project http://github.com/dmhuebner/bloccit
 
 The goal of this project was to build an application modeled after Reddit to practice building CRUD applications with Ruby on Rails. It was created according to user stories provided in the Bloc Full Stack Developer curriculum.
 
-Bloccit features custom user authentication and authorization using the bcrypt gem and uses Rails’ ActiveRecord::Enum class for different user types (admin, moderator, standard, etc.) Guest users can read through posts in public topics and view user comments. Users can create a free account to create their own posts, comment on other users’ posts and up or down vote posts they find interesting.
+Post Maestro features custom user authentication and authorization using the bcrypt gem and uses Rails’ ActiveRecord::Enum class for different user types (admin, moderator, standard, etc.) Guest users can read through posts in public topics and view user comments. Users can create a free account to create their own posts, comment on other users’ posts and up or down vote posts they find interesting.
 
-Bloccit has a simple, modern, mobile responsive design optimized for users on any size devise.
+Post Maestro has a simple, modern, mobile responsive design optimized for users on any size devise.
 
 -----------------------------------------------------------------
 
@@ -28,7 +28,7 @@ Bloccit has a simple, modern, mobile responsive design optimized for users on an
 **Rails v. 4.2.5**
 **Databases:** SQLite (Test, Development), PostgreSQL (Production)
 
-**Gems Used:** 
+**Gems Used:**
 - Bcrypt, User data encryption
 - Bootstrap, Styling
 - Factory Girl, Testing/development
